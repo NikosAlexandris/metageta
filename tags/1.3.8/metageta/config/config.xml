@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <defaultcontact>
+    <organisation>Australian Government Department of Sustainability, Environment, Water, Population and Communities</organisation>
+    <position>Remote Sensing Coordinator</position>
+    <telephone>+61 2 6274 2093</telephone>
+    <facsimile>+ 61 2 6274 1333</facsimile>
+    <address>
+      <deliveryPoint>GPO Box 787</deliveryPoint>
+      <city>Canberra</city>
+      <administrativeArea>Australian Capital Territory</administrativeArea>
+      <postalCode>2601</postalCode>
+      <country>Australia</country>
+    </address>
+    <emailAddress>satellite.metadata@environment.gov.au</emailAddress>
+    <onlineResource>
+      <URL>http://www.environment.gov.au</URL>
+      <description>Department of the Sustainability, Environment, Water, Population and Communities homepage</description>
+    </onlineResource>
+  </defaultcontact>
+  <geonetwork>
+    <site>
+      <name>DSEWPaC RS Image Archive</name>
+      <organization>DSEWPaC</organization>
+      <siteId>d274a2d8-f166-4db9-beac-ba0df4df42ee</siteId>
+    </site>
+    <categories default="datasets">
+      <category name="DVD"/>
+      <category name="RAMSAR"/>
+      <category name="TAPE"/>
+      <category name="datasets"/>
+      <category name="interactiveResources"/>
+      <category name="maps"/>
+      <category name="nautical"/>
+    </categories>
+  </geonetwork>
+</config>
+
