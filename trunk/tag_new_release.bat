@@ -20,7 +20,7 @@ svn copy %SRC% %DST% -m "Tagging DSEWPaC version %version%"
 svn checkout --depth=empty %DST% %TEMP%\metageta-dsewpac-%version%
 
 cd %TEMP%\metageta-dsewpac-%version%
-svn propset displayversion %version%-dsewpac .
+svn propset displayversion %version%-dsewpac-.$Revision$ .
 svn propset version %version%.$Revision$ .
 svn commit -m "Updating version properties %version%"
 cd %CURDIR%
