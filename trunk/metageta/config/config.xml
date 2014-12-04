@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <defaultcontact>
+    <organisation>Australian Government Department of the Environment</organisation>
+    <position>Environmental Research Institute of the Supervising Scientist</position>
+    <telephone>+61 8 8920 1100</telephone>
+    <facsimile>+61 8 8920 1199</facsimile>
+    <address>
+      <deliveryPoint>GPO Box 461</deliveryPoint>
+      <city>Darwin</city>
+      <administrativeArea>Northern Territory</administrativeArea>
+      <postalCode>0801</postalCode>
+      <country>Australia</country>
+    </address>
+    <emailAddress></emailAddress>
+    <onlineResource>
+      <URL>http://www.environment.gov.au/science/supervising-scientist</URL>
+      <description>Department of the Environment Supervising Scientist homepage</description>
+    </onlineResource>
+  </defaultcontact>
+  <geonetwork>
+    <site>
+      <name>Image Archive</name>
+      <organization>ERISS</organization>
+      <siteId></siteId>
+    </site>
+    <categories default="datasets">
+      <category name="DVD"/>
+      <category name="TAPE"/>
+      <category name="datasets"/>
+      <category name="maps"/>
+    </categories>
+  </geonetwork>
+</config>
+
