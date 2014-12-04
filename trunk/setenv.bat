@@ -32,4 +32,4 @@ PATH=%CURDIR%;%PATH%
 
 SET GDAL_SKIP=
 SET _GDAL_SKIP=JP2MrSID JP2OpenJPEG
-for /f "tokens=1" %%D IN ('gdalinfo  --formats^|findstr /r "%_GDAL_SKIP%"') DO SET GDAL_SKIP=!GDAL_SKIP! %%D
+REM for /f "tokens=1" %%D IN ('gdalinfo  --formats^|findstr /r "%_GDAL_SKIP%"') DO SET GDAL_SKIP=!GDAL_SKIP! %%D
