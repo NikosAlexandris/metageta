@@ -3,7 +3,7 @@
   <defaultcontact>
     <organisation>Australian Government Department of the Environment</organisation>
     <position>Remote Sensing Coordinator</position>
-    <telephone>+61 2 6274 2093</telephone>
+    <telephone>+61 2 6274 1111</telephone>
     <facsimile>+ 61 2 6274 1333</facsimile>
     <address>
       <deliveryPoint>GPO Box 787</deliveryPoint>
@@ -23,6 +23,7 @@
       <name>DoE RS Image Archive</name>
       <organization>DoE</organization>
       <siteId>d274a2d8-f166-4db9-beac-ba0df4df42ee</siteId>
+      <baseurl>http://pvac01mult01.internal.govt:8080/geonetwork</baseurl>
     </site>
     <categories default="datasets">
       <category name="DVD"/>
