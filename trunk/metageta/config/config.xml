@@ -23,6 +23,7 @@
       <name>Image Archive</name>
       <organization>ERISS</organization>
       <siteId></siteId>
+      <baseurl></baseurl>
     </site>
     <categories default="datasets">
       <category name="DVD"/>
