@@ -8,9 +8,25 @@ IF EXIST %CURDIR%\gdal\NUL (
     PUSHD "%CURDIR%\..\gdal"
 ) ELSE IF EXIST %CURDIR%\..\..\gdal\NUL (
     PUSHD "%CURDIR%\..\..\gdal"
+) ELSE IF EXIST %CURDIR%\..\bin\gdal\NUL (
+    PUSHD "%CURDIR%\..\bin\gdal"
 )
 SET GDAL_ROOT=%CD%
 POPD
+IF EXIST %CURDIR%\python\NUL (
+    PUSHD "%CURDIR%\python"
+) ELSE IF EXIST %CURDIR%\..\python\NUL (
+    PUSHD "%CURDIR%\..\python"
+) ELSE IF EXIST %CURDIR%\..\..\python\NUL (
+    PUSHD "%CURDIR%\..\..\python"
+) ELSE (
+    REM SET PYTHONNOUSERSITE=1
+    GOTO PYTHONNOUSERSITE
+)
+SET PYTHONUSERBASE=%CD%
+POPD
+
+:PYTHONNOUSERSITE
 
 SET GDAL_API_PROXY=ecw,sid,jp2,j2k,ntf
 rem SET GDAL_API_PROXY_CONN_POOL=NO
@@ -21,9 +37,9 @@ SET PROJ_LIB=%GDAL_ROOT%\share\proj
 SET GDAL_DRIVER_PATH=%GDAL_ROOT%\bin\plugins
 
 SET PYTHONHOME=C:\Python27\ArcGIS10.2
-SET PYTHONPATH=%PYTHONHOME%\Lib\lib-tk
-SET PYTHONPATH=%PYTHONHOME%\Lib\site-packages\win32;%PYTHONHOME%\Lib\site-packages\win32\lib;%PYTHONPATH%
-SET PYTHONPATH=%PYTHONHOME%\Lib\site-packages\pywin32_system32;%PYTHONHOME%\Lib\site-packages\pythonwin;%PYTHONPATH%
+REM SET PYTHONPATH=%PYTHONHOME%\Lib\lib-tk
+REM SET PYTHONPATH=%PYTHONHOME%\Lib\site-packages\win32;%PYTHONHOME%\Lib\site-packages\win32\lib;%PYTHONPATH%
+REM SET PYTHONPATH=%PYTHONHOME%\Lib\site-packages\pywin32_system32;%PYTHONHOME%\Lib\site-packages\pythonwin;%PYTHONPATH%
 SET PYTHONPATH=%GDAL_ROOT%\bin;%GDAL_ROOT%\lib;%PYTHONPATH%
 SET PYTHONPATH=%CURDIR%;%PYTHONPATH%
 
